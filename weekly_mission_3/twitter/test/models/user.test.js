@@ -13,25 +13,25 @@ describe("Unit Tests for User class", () => {
   })
 
 	test('2) Create an User object', () => {
-    const user = new User(1, "carlogilmar", "Carlo", "Bio")
+    const user = new User(1, "OntiverosLuis", "Luis", "Bio")
 		expect(user.id).toBe(1)
-		expect(user.username).toBe("carlogilmar")
-		expect(user.name).toBe("Carlo")
+		expect(user.username).toBe("OntiverosLuis")
+		expect(user.name).toBe("Luis")
 		expect(user.bio).toBe("Bio")
 	});
 
 	test('3) Add getters', () => {
-    const user = new User(1, "carlogilmar", "Carlo", "Bio")
-		expect(user.getUsername).toBe("carlogilmar")
+    const user = new User(1, "OntiverosLuis", "Luis", "Bio")
+		expect(user.getUsername).toBe("OntiverosLuis")
 		expect(user.getBio).toBe("Bio")
     expect(user.getDateCreated).not.toBeUndefined()
     expect(user.getLastUpdated).not.toBeUndefined()
 	});
 
 	test('4) Add setters', () => {
-    const user = new User(1, "carlogilmar", "Carlo", "Bio")
-    user.setUsername = "Gilmar"
-		expect(user.username).toBe("Gilmar")
+    const user = new User(1, "OntiverosLuis", "Luis", "Bio")
+    user.setUsername = "Luison"
+		expect(user.username).toBe("Luison")
 
     user.setBio = "New bio"
 		expect(user.bio).toBe("New bio")
